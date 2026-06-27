@@ -50,7 +50,7 @@ export default function MuseumScene({ onImageClick }: { onImageClick: (url: stri
   const cameraRef = useRef<CameraControls>(null);
 
   useEffect(() => {
-    cameraRef.current?.setLookAt(0, 1.5, 0, 0, 1.5, -1, false);
+    cameraRef.current?.setLookAt(0, 1.5, 0, 2, 1.5, -1, false);
   }, []);
 
 const handleDoubleClick = (e: any) => {
